@@ -30,7 +30,7 @@ Sigue estos pasos para correr el proyecto en tu máquina local:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/TU_USUARIO/mi-primer-rag.git](https://github.com/TU_USUARIO/mi-primer-rag.git)
+    git clone [https://github.com/Lautaro-Cejas/mi-primer-rag.git](https://github.com/Lautaro-Cejas/mi-primer-rag.git)
     cd mi-primer-rag
     ```
 
