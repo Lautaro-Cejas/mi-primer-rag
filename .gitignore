@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Base de datos local (no la subas, que se genere localmente)
+chroma_db/
+
+# IDEs
+.vscode/
+.idea/
+
+# PDF
+temp_uploaded.pdf
