@@ -37,7 +37,7 @@ Sigue estos pasos para correr el proyecto en tu máquina local:
 2.  **Crear un entorno virtual:**
     ```bash
     python -m venv venv
-    source venv/bin/activate  # En Windows: venv\Scripts\activate
+    source venv/Scripts/activate  # En Mac/Linux: source venv/bin/activate
     ```
 
 3.  **Instalar dependencias:**
@@ -46,8 +46,12 @@ Sigue estos pasos para correr el proyecto en tu máquina local:
     ```
 
 4.  **Configurar Variables de Entorno:**
-    * Crea un archivo `.env` en la raíz del proyecto.
-    * Agrega tu API Key de Groq (consíguela en [console.groq.com](https://console.groq.com/keys)):
+    * El proyecto incluye un archivo de ejemplo `.env.example`.
+    * Crea un archivo `.env` basado en él y agrega tu API Key de Groq:
+    ```bash
+    cp .env.example .env
+    ```
+    * Abre el archivo `.env` y pega tu clave (consíguela en [console.groq.com](https://console.groq.com/keys)):
     ```env
     GROQ_API_KEY=gsk_tu_clave_secreta_aqui...
     ```
@@ -60,8 +64,10 @@ Sigue estos pasos para correr el proyecto en tu máquina local:
 ## 📂 Estructura del Proyecto
 
 ```text
-├── .env                # Variables de entorno (API Keys) - NO SUBIR A GITHUB
-├── .gitignore          # Archivos ignorados por Git
-├── app.py              # Aplicación principal (Streamlit)
+├── venv/               # Entorno virtual (no se sube a GitHub)
+├── .env                # Tus claves reales (Ignorado por Git)
+├── .env.example        # Plantilla de variables de entorno (Público)
+├── .gitignore          # Archivos ignorados (venv, .env, archivos temporales)
+├── app.py              # Aplicación principal (Interfaz Streamlit)
 ├── requirements.txt    # Dependencias del proyecto
 └── README.md           # Documentación
